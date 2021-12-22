@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Overlapping</string>
+    <string name="name">Ebinazar Rapalli</string>
+    <string name="mail">ebinazart@gmail.com</string>
+    <string name="phone">+91 9527630487</string>
+    <string name="group">Add to Group</string>
+    <string name="comments">Show all Comments</string>
+    <string name="photos">Photos</string>
+    <string name="picnos">112</string>
+    <string name="follower">Followers</string>
+    <string name="follow">259</string>
+    <string name="follwing">Following</string>
+    <string name="followlist">320</string>
+
+</resources>
