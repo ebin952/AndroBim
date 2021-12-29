@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Overlapping</string>
+    <string name="app_name">AndroBim 7</string>
     <string name="name">Ebinazar Rapalli</string>
     <string name="mail">ebinazart@gmail.com</string>
     <string name="phone">+91 9527630487</string>
@@ -11,5 +11,12 @@
     <string name="follow">259</string>
     <string name="follwing">Following</string>
     <string name="followlist">320</string>
+    <string name="misson_acomplished">Misson Acomplished</string>
+    <string name="androbim_7">AndroBim 7</string>
+    <string name="Task1_text">Overlap with Constraint Layout| Profile UI</string>
+    <string name="more_to_come">More to Come</string>
+    <string name="Tast2_text">Multiple Linear Layouts to show Grids |Nested Linear Layouts</string>
+    <string name="Task3_text">Implementation of ScrollView with Fixed Button at the Bottom| Frame Layout</string>
+    <string name="Task4_txt">Toast message from input in EditText| RecyclerView</string>
 
 </resources>

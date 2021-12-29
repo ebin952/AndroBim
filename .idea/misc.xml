@@ -4,15 +4,21 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/eben9/AndroidStudioProjects/Overlapping/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.18076923076923077" />
+        <entry key="..\:/Users/eben9/AndroidStudioProjects/Overlapping/app/src/main/res/drawable/frame_shape.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/eben9/AndroidStudioProjects/Overlapping/app/src/main/res/drawable/ic_baseline_comment_24.xml" value="0.18076923076923077" />
         <entry key="..\:/Users/eben9/AndroidStudioProjects/Overlapping/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.18076923076923077" />
         <entry key="..\:/Users/eben9/AndroidStudioProjects/Overlapping/app/src/main/res/drawable/ic_baseline_group_add_24.xml" value="0.18076923076923077" />
         <entry key="..\:/Users/eben9/AndroidStudioProjects/Overlapping/app/src/main/res/drawable/ic_baseline_phone_android_24.xml" value="0.18076923076923077" />
         <entry key="..\:/Users/eben9/AndroidStudioProjects/Overlapping/app/src/main/res/drawable/ic_launcher_background.xml" value="0.18076923076923077" />
+        <entry key="..\:/Users/eben9/AndroidStudioProjects/Overlapping/app/src/main/res/drawable/linear_border.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/eben9/AndroidStudioProjects/Overlapping/app/src/main/res/drawable/profile_layer.xml" value="0.18076923076923077" />
         <entry key="..\:/Users/eben9/AndroidStudioProjects/Overlapping/app/src/main/res/drawable/profile_shape.xml" value="0.18076923076923077" />
         <entry key="..\:/Users/eben9/AndroidStudioProjects/Overlapping/app/src/main/res/drawable/view_shape.xml" value="0.18076923076923077" />
         <entry key="..\:/Users/eben9/AndroidStudioProjects/Overlapping/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/eben9/AndroidStudioProjects/Overlapping/app/src/main/res/layout/activity_main2.xml" value="0.2" />
+        <entry key="..\:/Users/eben9/AndroidStudioProjects/Overlapping/app/src/main/res/layout/activity_main3.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/eben9/AndroidStudioProjects/Overlapping/app/src/main/res/layout/activity_main4.xml" value="0.1" />
+        <entry key="..\:/Users/eben9/AndroidStudioProjects/Overlapping/app/src/main/res/layout/activity_main5.xml" value="0.1814814814814815" />
       </map>
     </option>
   </component>
