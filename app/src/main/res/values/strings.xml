@@ -17,6 +17,7 @@
     <string name="more_to_come">More to Come</string>
     <string name="Tast2_text">Multiple Linear Layouts to show Grids |Nested Linear Layouts</string>
     <string name="Task3_text">Implementation of ScrollView with Fixed Button at the Bottom| Frame Layout</string>
-    <string name="Task4_txt">Toast message from input in EditText| RecyclerView</string>
+    <string name="Task4_txt">Toast message from input in EditText| Relative Layout</string>
+    <string name="simple_calculator">Simple Calculator</string>
 
 </resources>

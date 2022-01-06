@@ -10,19 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
-            android:name=".MainActivity5"
+            android:name=".ActivityTask6"
             android:exported="false" />
         <activity
-            android:name=".MainActivity3"
+            android:name=".ActivityTask5"
             android:exported="false" />
         <activity
-            android:name=".MainActivity4"
+            android:name=".ActivityTask3"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".ActivityTask4"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ActivityTask1"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityTask2"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMain"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

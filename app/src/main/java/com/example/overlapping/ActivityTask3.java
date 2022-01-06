@@ -7,12 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity5 extends AppCompatActivity {
+public class ActivityTask3 extends AppCompatActivity {
     Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main5);
+        setContentView(R.layout.task3_activity);
         btn = findViewById(R.id.btn);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,7 +26,7 @@ public class MainActivity5 extends AppCompatActivity {
     }
 
     private void mainActivity() {
-        Intent i = new Intent(getApplicationContext(), MainActivity.class);
+        Intent i = new Intent(getApplicationContext(), ActivityMain.class);
         startActivity(i);
     }
 }
