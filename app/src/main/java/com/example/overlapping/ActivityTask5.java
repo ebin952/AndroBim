@@ -8,12 +8,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 public class ActivityTask5 extends AppCompatActivity {
 
     Button button0, button1, button2, button3, button4, button5, button6,
             button7, button8, button9, buttonAdd, buttonSub, buttonDivision,
             buttonMul, button10, buttonC, buttonEqual;
-    TextView text;
+    TextView text, result;
 
     float mValueOne, mValueTwo, value;
 
@@ -42,6 +44,7 @@ public class ActivityTask5 extends AppCompatActivity {
         buttonC = (Button) findViewById(R.id.buttonC);
         buttonEqual = (Button) findViewById(R.id.buttoneql);
         text = (TextView) findViewById(R.id.edt1);
+        result = (TextView) findViewById(R.id.result);
 
 
         button1.setOnClickListener(new View.OnClickListener() {
@@ -115,12 +118,20 @@ public class ActivityTask5 extends AppCompatActivity {
             }
         });
 
+        button10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                text.setText(text.getText() + ".");
+            }
+        });
+
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                if (text == null) {
-                    text.setText(" ");
+                if (text.getText().toString().matches("")) {
+                    text.setText("+");
+                    result.setText("ERROR");
                 } else {
                     mValueOne = Float.parseFloat(text.getText() + "");
                     addition = true;
@@ -132,77 +143,98 @@ public class ActivityTask5 extends AppCompatActivity {
         buttonSub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mValueOne = Float.parseFloat(text.getText() + "");
-                substract = true;
-                text.setText(null);
+                if (text.getText().toString().matches("")) {
+                    text.setText("-");
+                    result.setText("ERROR");
+                } else {
+                    mValueOne = Float.parseFloat(text.getText() + "");
+                    substract = true;
+                    text.setText(null);
+                }
             }
         });
 
         buttonMul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mValueOne = Float.parseFloat(text.getText() + "");
-                multiplication = true;
-                text.setText(null);
+                if (text.getText().toString().matches("")) {
+                    text.setText("*");
+                    result.setText("ERROR");
+                } else {
+                    mValueOne = Float.parseFloat(text.getText() + "");
+                    multiplication = true;
+                    text.setText(null);
+                }
             }
         });
 
         buttonDivision.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mValueOne = Float.parseFloat(text.getText() + "");
-                division = true;
-                text.setText(null);
+                if (text.getText().toString().matches("")) {
+                    text.setText("/");
+                    result.setText("ERROR");
+                } else {
+                    mValueOne = Float.parseFloat(text.getText() + "");
+                    division = true;
+                    text.setText(null);
+                }
             }
         });
-//Equal Button
+
+
+        //Equal Button
         buttonEqual.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mValueTwo = Float.parseFloat(text.getText() + "");
 
+
                 value = mValueOne + mValueTwo;
-                //text.setText(String.format("%.0f", value) + "");
+                DecimalFormat format = new DecimalFormat("0.##");
+
 
                 if (addition == true) {
                     value = mValueOne + mValueTwo;
-                    text.setText(String.format("%.0f", value) + "");
+                    text.setText("");
+                    result.setText(format.format(value) + "");
                     addition = false;
                 }
 
                 if (substract == true) {
                     value = mValueOne - mValueTwo;
-                    text.setText(String.format("%.0f", value) + "");
+                    text.setText("");
+                    result.setText(format.format(value) + "");
                     substract = false;
                 }
 
                 if (multiplication == true) {
                     value = mValueOne * mValueTwo;
-                    text.setText(String.format("%.0f", value) + "");
+                    text.setText("");
+                    result.setText(format.format(value) + "");
                     multiplication = false;
                 }
 
                 if (division == true) {
                     value = mValueOne / mValueTwo;
-                    text.setText(String.format("%.0f", value) + "");
+                    text.setText("");
+                    result.setText(format.format(value) + "");
                     division = false;
                 }
             }
         });
-// Clear Button
+
+
+        // Clear Button
         buttonC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 text.setText("");
+                result.setText("");
             }
         });
 
-        button10.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                text.setText(text.getText() + ".");
-            }
-        });
+
 
     }
 }

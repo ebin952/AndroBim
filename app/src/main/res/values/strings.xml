@@ -19,5 +19,6 @@
     <string name="Task3_text">Implementation of ScrollView with Fixed Button at the Bottom| Frame Layout</string>
     <string name="Task4_txt">Toast message from input in EditText| Relative Layout</string>
     <string name="simple_calculator">Simple Calculator</string>
+    <string name="listview_adapters">ListView | Adapters</string>
 
 </resources>

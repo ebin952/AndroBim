@@ -10,11 +10,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class ActivityMain extends AppCompatActivity {
-        ImageView task1, task2, task3, task4, task5, task6;
+        ImageView task1, task2, task3, task4, task5, task6,task7;
         TextView date;
+        Calendar calendar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,12 +27,13 @@ public class ActivityMain extends AppCompatActivity {
         task4 = findViewById(R.id.task4);
         task5 = findViewById(R.id.task5);
         task6 = findViewById(R.id.task6);
+        task7 = findViewById(R.id.task7);
         date = findViewById(R.id.date);
 
-
-        @SuppressLint("SimpleDateFormat") SimpleDateFormat dateView = new SimpleDateFormat("dd-MM-yyyy, HH:MM");
-        String datefrmt = dateView.format(new Date());
-        date.setText(datefrmt);
+        calendar = Calendar.getInstance();
+        SimpleDateFormat dateView = new SimpleDateFormat("dd-MM-yyyy, HH:MM");
+        String dateFormat = dateView.format(calendar.getTime()).toString();
+        date.setText(dateFormat);
 
 
 
@@ -38,7 +41,9 @@ public class ActivityMain extends AppCompatActivity {
         task1.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                task1Activity();
+
+                Intent intent = new Intent(getApplicationContext(), ActivityTask1.class);
+                startActivity(intent);
 
             }
         });
@@ -46,14 +51,18 @@ public class ActivityMain extends AppCompatActivity {
         task2.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                task2Activity();
+
+                Intent intent = new Intent(getApplicationContext(), ActivityTask2.class);
+                startActivity(intent);
 
             }
         });
         task3.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                task3Activity();
+
+                Intent intent = new Intent(getApplicationContext(), ActivityTask3.class);
+                startActivity(intent);
 
             }
         });
@@ -61,7 +70,9 @@ public class ActivityMain extends AppCompatActivity {
         task4.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                task4Activity();
+
+                Intent intent = new Intent(getApplicationContext(), ActivityTask4.class);
+                startActivity(intent);
 
             }
         });
@@ -69,7 +80,9 @@ public class ActivityMain extends AppCompatActivity {
         task5.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                task5Activity();
+
+                Intent intent = new Intent(getApplicationContext(), ActivityTask5.class);
+                startActivity(intent);
 
             }
         });
@@ -77,45 +90,22 @@ public class ActivityMain extends AppCompatActivity {
         task6.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
-                task6Activity();
+
+                Intent intent = new Intent(getApplicationContext(), ActivityTask6.class);
+                startActivity(intent);
 
             }
         });
 
-    }
+        task7.setOnClickListener(new View.OnClickListener() {
 
-    private void task1Activity() {
-        Intent intent = new Intent(this, ActivityTask1.class);
-        startActivity(intent);
-    }
+            public void onClick(View view) {
 
-    private void task2Activity(){
-        Intent intent = new Intent(this, ActivityTask2.class);
-        startActivity(intent);
+                Intent intent = new Intent(getApplicationContext(), ActivityTask7.class);
+                startActivity(intent);
 
-    }
-
-    private void task3Activity(){
-        Intent intent = new Intent(this, ActivityTask3.class);
-        startActivity(intent);
-
-    }
-
-    private void task4Activity(){
-        Intent intent = new Intent(this, ActivityTask4.class);
-        startActivity(intent);
-
-    }
-
-    private void task5Activity(){
-        Intent intent = new Intent(this, ActivityTask5.class);
-        startActivity(intent);
-
-    }
-
-    private void task6Activity(){
-        Intent intent = new Intent(this, ActivityTask6.class);
-        startActivity(intent);
+            }
+        });
 
     }
 
